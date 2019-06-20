@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <fieldset id="question1">
+                    <legend>this is question 1</legend>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">option 1<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">option 2<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="right">option 3<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">option 4<BR></label>
+                    </fieldset>
+            <fieldset id="question2">
+                    <legend>this is question 2</legend>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">option 1<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">option 2<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">option 3<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="right">option 4<BR></label>
+                    </fieldset>
+            <fieldset id="question3">
+                    <legend>this is question 3</legend>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">option 1<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">option 2<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">option 3<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="right">option 4<BR></label>
+                    </fieldset>   
+            <fieldset id="question4">
+                    <legend>this is question 4</legend>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="right">option 1<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">option 2<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">option 3<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wring">option 4<BR></label>
+                    </fieldset>             
+
+        <!-- <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <h1 id="first-question"></h1>
+            </div>
+        </div>
+    
+            <form>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="radio" name="q1" value="wrong" id="option">
+                        <label for="firstoption">Option 1</label>   
+                    </div>
+                    <div class="col-md-3">           
+                        <input type="radio" name="q1" value="wrong" id="option">
+                        <label for="secondoption">Option 2</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="q1" value="wrong" id="option">
+                        <label for="thirdoption">Option 3</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="q1" value="right" id="option">
+                        <label for="fourthoption">this is answer 1</label>
+                    </div>
+                </div>
+                   
+            </form>
+        
+
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <h1 id="second-question"></h1>
+            </div>
+        </div>
+
+            <form>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="radio" name="q2" value="wrong" id="option">
+                        <label for="firstoption">Option 1</label>   
+                    </div>
+                    <div class="col-md-3">           
+                        <input type="radio" name="q2" value="wrong" id="option">
+                        <label for="secondoption">Option 2</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="q2" value="right" id="option">
+                        <label for="thirdoption">this is answer 2</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="radio" name="q2" value="wrong" id="option">
+                        <label for="fourthoption">option 4</label>
+                    </div>
+                </div>
+                   
+            </form> -->
+        
+        <div class="row">   
+            <div class="col-md-4">
+            </div>   
+            <div class="col-md-4">
+            <div id="buttons">
+                    <button id="finish"><h2>Finish</h2></button>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">   
+                <div class="col-md-3">
+                    <p>Corrects : <span id="corrects"></span></p>
+                </div>   
+        </div>
+        <div class="row">
+                <div class="col-md-4">
+                    <p>Incorrects : <span id="incorrects"></span></p>
+                </div>
+        </div>
+    </div>
+
+
+   
+
+ 
+    <script src="assest/javascript/game.js"></script>
+</body>
+</html>
