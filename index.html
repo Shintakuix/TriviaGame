@@ -4,41 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assest/css/style.css">
       
-    <title>Document</title>
+    <title>Trivia Game</title>
 </head>
 <body>
     <div class="container">
-            <fieldset id="question1">
-                    <legend>this is question 1</legend>
-                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">option 1<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">option 2<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q1" VALUE="right">option 3<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">option 4<BR></label>
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <h1>TOTALLY TRIVIAL TRIVIA!!</h1>
+                </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <button id="start"><h2>START</h2></button>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <div id="show-number"></div>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <fieldset id="question1">
+                    <legend>In the 2012 movie, The Avengers features Captain America. What is his real name?</legend>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">Buck Rogers<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">Ted Rogers<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="right">Steve Rogers<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q1" VALUE="wrong">Tony Stark<BR></label>
                     </fieldset>
-            <fieldset id="question2">
-                    <legend>this is question 2</legend>
-                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">option 1<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">option 2<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">option 3<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q2" VALUE="right">option 4<BR></label>
+                </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <fieldset id="question2">
+                    <legend>Who is the leader of S.H.I.E.L.D?</legend>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">Captain America<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">Iron Man<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="wrong">Bruce Banner<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q2" VALUE="right">Nick Furry<BR></label>
                     </fieldset>
-            <fieldset id="question3">
-                    <legend>this is question 3</legend>
-                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">option 1<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">option 2<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">option 3<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q3" VALUE="right">option 4<BR></label>
-                    </fieldset>   
-            <fieldset id="question4">
-                    <legend>this is question 4</legend>
-                    <label><INPUT TYPE="radio" NAME="q4" VALUE="right">option 1<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">option 2<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">option 3<BR></label>
-                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wring">option 4<BR></label>
-                    </fieldset>             
+                </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-md-12 img-centered">            
+                    <fieldset id="question3">
+                    <legend>Who originally created the Avengers?</legend>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">Ant and Dec<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">Paul Hollywood and Mary Berry<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="wrong">Warner Brothers<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q3" VALUE="right">Stan Lee and Jack Kirby<BR></label>
+                    </fieldset>  
+                </div>
+        </div> 
+        <br>
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <fieldset id="question4">
+                    <legend>In the films, what does S.H.I.E.L.D. stand for?</legend>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">Supreme Headquarters, International Espionage, Law-Enforcement Division<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="right">Strategic Homeland Intervention, Enforcement and Logistic Division<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">Strategic Hazard Intervention Espionage Logistics Directorate<BR></label>
+                    <label><INPUT TYPE="radio" NAME="q4" VALUE="wrong">Superheroes Help In Exciting Logical Display<BR></label>
+                    </fieldset>  
+                </div>
+        </div>           
 
         <!-- <div class="row">
             <div class="col-md-4">
@@ -100,11 +140,10 @@
                 </div>
                    
             </form> -->
-        
+        <br>
         <div class="row">   
-            <div class="col-md-4">
-            </div>   
-            <div class="col-md-4">
+              
+            <div class="col-md-12 img-centered">
             <div id="buttons">
                     <button id="finish"><h2>Finish</h2></button>
             </div>
@@ -112,14 +151,27 @@
         </div>
 
         <div class="row">   
-                <div class="col-md-3">
-                    <p>Corrects : <span id="corrects"></span></p>
+                <div class="col-md-12 img-centered">
+                    <p id="cor">Corrects : <span id="corrects"></span></p>
                 </div>   
         </div>
         <div class="row">
-                <div class="col-md-4">
-                    <p>Incorrects : <span id="incorrects"></span></p>
+                <div class="col-md-12 img-centered">
+                    <p id="inc">Incorrects : <span id="incorrects"></span></p>
                 </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12 img-centered">
+                    <p id="lef">Unresponded : <span id="leftblank"></span></p>
+                </div>
+        </div>
+        <div class="row">   
+              
+            <div class="col-md-12 img-centered">
+            <div id="buttons">
+                    <button id="restart"><h2>Restart</h2></button>
+            </div>
+            </div>
         </div>
     </div>
 
